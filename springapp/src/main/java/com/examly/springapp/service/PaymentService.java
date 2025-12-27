@@ -1,5 +1,10 @@
 package com.examly.springapp.service;
 
-public class PaymentService {
-    
+import com.examly.springapp.model.Payment;
+
+public interface PaymentService {
+
+    Payment savePayment(Payment payment);
+
+    Payment getPaymentById(long id);
 }

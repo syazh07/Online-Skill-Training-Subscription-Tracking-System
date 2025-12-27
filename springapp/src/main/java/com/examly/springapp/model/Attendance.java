@@ -2,9 +2,7 @@ package com.examly.springapp.model;
 
 import java.sql.Date;
 
-// import jakarta.persistence.Column;
-// import jakarta.persistence.Entity;
-// import jakarta.persistence.GeneratedValue;
+
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.*;
 
@@ -20,9 +18,6 @@ public class Attendance {
     public Attendance(){
 
     }
-
-    
-
     public Attendance(long attendanceId, long memberId, String date, String checkInTime, String checkoutTime) {
         this.attendanceId = attendanceId;
         this.memberId = memberId;
@@ -89,19 +84,5 @@ public class Attendance {
 
     public void setCheckoutTime(String checkoutTime) {
         this.checkoutTime = checkoutTime;
-    }
-    
-
-
-
-
-
-
-
-
-
-    
-
-
-    
+    }    
 }
